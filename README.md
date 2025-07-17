@@ -1,12 +1,38 @@
-# React + Vite
+# TradZen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 📈 MERN-based stock trading platform with a Zerodha-style UI and admin dashboard.
 
-Currently, two official plugins are available:
+## 🔹 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 Login & Logout functionality
+- 🧾 Trade orders and funds management
+- 🖥️ Zerodha-style user interface (built in React)
+- 📊 Dashboard redirection for admin users
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: `TradZen-Frontend` (React app with Zerodha-style UI)
+- **Backend**: `TradZen-Backend` (Express + MongoDB REST API)
+- **Dashboard**: `TradZen-Dashboard` (Admin panel in React)
+
+## 📦 Tech Stack
+
+- React, Node.js, Express.js, MongoDB (MERN)
+- Bootstrap / Custom CSS
+- JWT for authentication
+
+## 🔗 Repos
+
+- [Frontend Repo](https://github.com/yourusername/TradZen-Frontend)
+- [Backend Repo](https://github.com/yourusername/TradZen-Backend)
+- [Dashboard Repo](https://github.com/yourusername/TradZen-Dashboard)
+
+## 📄 License
+
+MIT
+
+# ⚙️ 2. Setup Backend
+
+cd TradZen-Frontend
+npm install
+npm run dev
