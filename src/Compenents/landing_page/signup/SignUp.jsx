@@ -34,7 +34,7 @@ const Signup = () => {
     // console.log("frontend work");
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/signup",
+        "tradzen-backend-production.up.railway.app/signup",
         {
           ...inputValue,
         },
