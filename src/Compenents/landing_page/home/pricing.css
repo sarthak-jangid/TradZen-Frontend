@@ -1,0 +1,25 @@
+.pricing-box-container {
+  display: flex;
+}
+
+.pricing-box {
+  display: flex;
+  padding-top: 2%;
+}
+
+.price-image {
+  width: 110px;
+  position: relative;
+}
+
+.pricing-box p {
+  position: relative;
+  font-size: 11px;
+  margin: 0;
+  color: #666;
+  line-height: 16px;
+  height: 50%;
+  width: 100px;
+  left: -20px;
+  top: 69px;
+}
