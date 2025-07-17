@@ -49,7 +49,7 @@ const Login = () => {
         handleSuccess(message);
         localStorage.setItem("token", token);
         setTimeout(() => {
-          window.location.href = "http://localhost:5174/"; // ✅ Cross-app redirect
+          window.location.href = "trad-zen-dashboard.vercel.app/"; //  Cross-app redirect
         }, 1000);
       } else {
         handleError(message);

@@ -39,7 +39,7 @@ export default function Navbar() {
       });
 
       setTimeout(() => {
-        window.location.href = "http://localhost:5173/";
+        window.location.href = "https://trad-zen-frontend-hcz2.vercel.app/";
       }, 1500); // 1.5 seconds delay
     } catch (err) {
       console.error("Logout error", err);
@@ -71,24 +71,24 @@ export default function Navbar() {
           }}
         >
           <img
-            src="media\images\trend.png" 
+            src="media\images\trend.png"
             alt="TradeZen Logo"
             style={{
-              display:"inline-block",
-              width:"35px",
-              marginRight:"2%",
-              marginBottom:"20px"
-              }}
+              display: "inline-block",
+              width: "35px",
+              marginRight: "2%",
+              marginBottom: "20px",
+            }}
             title="TradeZen"
           />
           <h2
             style={{
               color: "#2076ca",
-              width:"25vw",
-              letterSpacing:"2px",
-              fontWeight:"700",
-              display:"inline-block",
-              marginTop:"18px"
+              width: "25vw",
+              letterSpacing: "2px",
+              fontWeight: "700",
+              display: "inline-block",
+              marginTop: "18px",
             }}
           >
             TradZen
@@ -208,7 +208,7 @@ export default function Navbar() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="http://localhost:5174"
+                        to="trad-zen-dashboard.vercel.app"
                       >
                         Dashboard
                       </Link>
