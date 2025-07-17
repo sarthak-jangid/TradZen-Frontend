@@ -26,7 +26,7 @@ export default function Navbar() {
   const token = localStorage.getItem("token");
   const handleLogOut = async () => {
     try {
-      await axios.get("tradzen-backend-production.up.railway.app/logout", {
+      await axios.get("https://tradzen-backend-production.up.railway.app/logout", {
         withCredentials: true, // important for cookies
       });
 
@@ -39,7 +39,7 @@ export default function Navbar() {
       });
 
       setTimeout(() => {
-        window.location.href = "https://trad-zen-frontend-hcz2.vercel.app/";
+        window.location.href = "https://tradzen-frontend-1.onrender.com/";
       }, 1500); // 1.5 seconds delay
     } catch (err) {
       console.error("Logout error", err);
@@ -208,7 +208,7 @@ export default function Navbar() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="trad-zen-dashboard.vercel.app"
+                        to="https://tradzen-dashboard.onrender.com"
                       >
                         Dashboard
                       </Link>

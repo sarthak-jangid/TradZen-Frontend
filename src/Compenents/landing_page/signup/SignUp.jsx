@@ -34,7 +34,7 @@ const Signup = () => {
     // console.log("frontend work");
     try {
       const { data } = await axios.post(
-        "tradzen-backend-production.up.railway.app/signup",
+        "https://tradzen-backend-production.up.railway.app/signup",
         {
           ...inputValue,
         },
@@ -45,7 +45,7 @@ const Signup = () => {
         handleSuccess(message);
         localStorage.setItem("token", token);
         setTimeout(() => {
-          window.location.href = "trad-zen-dashboard.vercel.app"; // ✅ Cross-app redirect
+          window.location.href = "https://tradzen-dashboard.onrender.com"; //   Cross-app redirect
         }, 1000);
       } else {
         handleError(message);
