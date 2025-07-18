@@ -34,7 +34,7 @@ const Signup = () => {
     // console.log("frontend work");
     try {
       const { data } = await axios.post(
-        "https://tradzen-backend.onrender.com/signup",
+        "https://tradzen-backend-production.up.railway.app/signup",
         {
           ...inputValue,
         },
