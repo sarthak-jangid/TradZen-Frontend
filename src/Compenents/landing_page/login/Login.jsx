@@ -10,6 +10,7 @@ const Login = () => {
     email: "",
     password: "",
   });
+  const [isLogIning, setIsLogIning] = useState(false);
   const { email, password } = inputValue;
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -32,12 +33,13 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLogIning(true);
     try {
       const { data } = await axios.post(
         "https://tradzen-backend-production.up.railway.app/login",
         {
           ...inputValue,
-        },  
+        },
         { withCredentials: true }
       );
       // console.log(data);
@@ -55,7 +57,8 @@ const Login = () => {
         handleError(message);
       }
     } catch (error) {
-      console.log(error);
+      // console.log(error);
+      setIsLogIning(false);
 
       // Axios might send a response with error details
       if (
@@ -141,7 +144,9 @@ const Login = () => {
                   autoComplete="current-password"
                 />
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit">
+                {isLogIning ? "Submiting" : "Submit"}
+              </button>
               <span>
                 Already have an account? <Link to={"/signup"}>SignUp</Link>
               </span>

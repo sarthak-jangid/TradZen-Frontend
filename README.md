@@ -1,38 +1,49 @@
-# TradZen
+# TradZen Frontend – Public Stock Trading App UI
 
-> 📈 MERN-based stock trading platform with a Zerodha-style UI and admin dashboard.
+This is the frontend of the TradZen stock trading platform, built using **React.js**. It handles the public-facing parts of the app such as the landing page, user login, registration, and initial routing.
 
-## 🔹 Features
+## 🚀 Live Demo
 
-- 🔐 Login & Logout functionality
-- 🧾 Trade orders and funds management
-- 🖥️ Zerodha-style user interface (built in React)
-- 📊 Dashboard redirection for admin users
+🔗 [View Live](https://tradzen-frontend.onrender.com)  
+⚠️ _Note: Hosted on Render free tier – may take a few seconds to load._
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-- **Frontend**: `TradZen-Frontend` (React app with Zerodha-style UI)
-- **Backend**: `TradZen-Backend` (Express + MongoDB REST API)
-- **Dashboard**: `TradZen-Dashboard` (Admin panel in React)
+(Add screenshots here: e.g., landing page, login screen, register form)
 
-## 📦 Tech Stack
+## 🛠 Tech Stack
 
-- React, Node.js, Express.js, MongoDB (MERN)
-- Bootstrap / Custom CSS
-- JWT for authentication
+- **Frontend Framework:** React.js (v19)
+- **Routing:** React Router DOM
+- **HTTP Requests:** Axios
+- **UI Feedback:** React Toastify
+- **State Management:** React useState/useEffect (basic)
+- **Styling:** CSS Modules or Styled Components (whichever you're using)
 
-## 🔗 Repos
+## ✨ Features
 
-- [Frontend Repo](https://github.com/yourusername/TradZen-Frontend)
-- [Backend Repo](https://github.com/yourusername/TradZen-Backend)
-- [Dashboard Repo](https://github.com/yourusername/TradZen-Dashboard)
+- User login and registration forms
+- Integration with backend APIs (authentication, error handling)
+- Redirects to dashboard after login
+- Toast messages for success/error feedback
 
-## 📄 License
+## 🔧 Installation
 
-MIT
+1. Clone the repo:
 
-# ⚙️ 2. Setup Backend
+```bash
+git clone https://github.com/sarthak-jangid/tradzen-frontend.git
 
-cd TradZen-Frontend
+cd tradzen-frontend
+
 npm install
+
 npm run dev
+
+
+## 🔗 Related Repositories
+
+- 🔧 [TradZen Backend (Node.js + Express + MongoDB)](https://github.com/sarthak-jangid/tradzen-backend) *(API, auth, and database)*
+- 📊 [TradZen Dashboard (React.js + MUI + Razorpay)](https://github.com/sarthak-jangid/tradzen-dashboard) *(authenticated user dashboard)*
+- 🌐 [TradZen Frontend (This Repo)](https://github.com/sarthak-jangid/tradzen-frontend)  *(public site)*
+```

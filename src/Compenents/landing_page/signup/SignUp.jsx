@@ -11,6 +11,7 @@ const Signup = () => {
     password: "",
     username: "",
   });
+  const [isSigning, setIsSigning] = useState(false);
   const { email, password, username } = inputValue;
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -32,6 +33,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // console.log("frontend work");
+    setIsSigning(true);
     try {
       const { data } = await axios.post(
         "https://tradzen-backend-production.up.railway.app/signup",
@@ -52,6 +54,7 @@ const Signup = () => {
       }
     } catch (error) {
       // console.log(error);
+      setIsSigning(false);
       if (
         error.response &&
         error.response.data &&
@@ -146,7 +149,9 @@ const Signup = () => {
                   autoComplete="new-password"
                 />
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit">
+                {isSigning ? "Submiting" : "Submit"}
+              </button>
               <span>
                 Already have an account? <Link to={"/login"}>Login</Link>
               </span>
