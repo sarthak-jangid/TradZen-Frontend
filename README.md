@@ -4,7 +4,7 @@ This is the frontend of the TradZen stock trading platform, built using **React.
 
 ## 🚀 Live Demo
 
-🔗 [View Live]((https://tradzen-frontend-1.onrender.com/))  
+🔗 [View Live]([https://tradzen-frontend-1.onrender.com/])  
 ⚠️ _Note: Hosted on Render free tier – may take a few seconds to load._
 
 ## 📸 Screenshots
