@@ -26,7 +26,7 @@ export default function Navbar() {
   const token = localStorage.getItem("token");
   const handleLogOut = async () => {
     try {
-      await axios.get("https://tradzen-backend-production.up.railway.app/logout", {
+      await axios.get("https://https://tradzen-backend.onrender.com/logout", {
         withCredentials: true, // important for cookies
       });
 
