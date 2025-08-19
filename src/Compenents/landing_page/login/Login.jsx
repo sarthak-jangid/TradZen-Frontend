@@ -36,7 +36,7 @@ const Login = () => {
     setIsLogIning(true);
     try {
       const { data } = await axios.post(
-        "https://https://tradzen-backend.onrender.com/login",
+        "https://tradzen-backend.onrender.com/login",
         {
           ...inputValue,
         },

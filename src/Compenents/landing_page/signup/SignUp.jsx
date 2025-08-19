@@ -36,7 +36,7 @@ const Signup = () => {
     setIsSigning(true);
     try {
       const { data } = await axios.post(
-        "https://https://tradzen-backend.onrender.com/signup",
+        "https://tradzen-backend.onrender.com/signup",
         {
           ...inputValue,
         },
